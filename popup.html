@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>AutoFill Extension</title>
-  <script src="popup.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFill Extension</title>
+    <link rel="stylesheet" href="popup.css"> <!-- Include CSS file for styling -->
 </head>
 <body>
-  <h2>AutoFill Extension</h2>
-  <label class="switch">
-    <input type="checkbox" id="toggleSwitch">
-    <span class="slider"></span>
-  </label>
+    <div class="popup-container">
+        <h2 class="popup-heading">AutoFill Extension</h2>
+        <div id="apiKeyContainer" class="api-key-container">
+            <label for="apiKey">API Key:</label>
+            <input type="text" id="apiKey" placeholder="Enter your API key">
+            <button id="saveApiKey">Save</button>
+            <button id="clearApiKey">Clear</button> <!-- Clear button now used for resetting -->
+        </div>
+        <div class="toggle-switch-container">
+            <label class="toggle-switch">
+                <input type="checkbox" id="toggleSwitch">
+                <span class="slider round"></span>
+            </label>
+            <span class="toggle-label">Enable Extension</span>
+        </div>
+    </div>
+    <script src="popup.js"></script> <!-- Include JavaScript file for functionality -->
 </body>
 </html>

@@ -1,0 +1,15 @@
+/* Ensure there's enough space for the icon */
+input[type="text"], textarea {
+    padding-right: 30px !important;
+    box-sizing: border-box; /* Ensure padding does not affect the total width */
+}
+
+.improvement-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px; /* Adjust icon size as needed */
+    height: 20px;
+}
