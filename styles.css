@@ -10,6 +10,6 @@ input[type="text"], textarea {
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    width: 20px; /* Adjust icon size as needed */
+    width: 20px;
     height: 20px;
 }
