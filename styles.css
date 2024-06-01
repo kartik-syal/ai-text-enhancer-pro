@@ -2,9 +2,9 @@
 input[type="text"], textarea {
     padding-right: 30px !important;
     box-sizing: border-box; /* Ensure padding does not affect the total width */
-}
-
-.improvement-icon {
+  }
+  
+  .improvement-icon {
     position: absolute;
     right: 5px;
     top: 50%;
@@ -12,4 +12,38 @@ input[type="text"], textarea {
     cursor: pointer;
     width: 20px;
     height: 20px;
-}
+  }
+  
+  /* Styles for the suggestion dropdown */
+  .suggestion-dropdown {
+    position: fixed; /* Change to fixed to avoid affecting document flow */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: calc(100% - 10px); /* Make the dropdown as wide as the input, minus some padding */
+    max-width: 300px; /* Max width to keep it responsive */
+    max-height: 200px; /* Limit the height for large lists */
+    overflow-y: auto; /* Scroll if there are too many suggestions */
+    padding: 5px 0; /* Padding at the top and bottom */
+  }
+  
+  .suggestion-dropdown div {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .suggestion-dropdown div:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Add some global styles for better readability */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .improvement-wrapper {
+    margin-bottom: 10px;
+  }
+  

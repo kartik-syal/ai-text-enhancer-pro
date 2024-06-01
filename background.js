@@ -5,6 +5,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
       files: ['content.js']
     });
   } else if (message.action === "enable_extension" || message.action === "disable_extension") {
+    chrome.storage.sync.set({ extensionEnabled: message.action === "enable_extension" });
     chrome.tabs.query({}, function(tabs) {
       tabs.forEach(tab => {
         chrome.scripting.executeScript({

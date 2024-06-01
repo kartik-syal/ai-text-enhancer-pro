@@ -7,10 +7,18 @@
     text-align: center;
 }
 
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 .popup-heading {
     margin-bottom: 20px;
     font-size: 24px;
     color: #333;
+    padding-right: 8px;
 }
 
 .api-key-container {
@@ -48,6 +56,9 @@
 
 .toggle-switch-container {
     margin-bottom: 20px;
+    display: flex;
+    margin-top: 28px;
+    padding-left: 8px;
 }
 
 .toggle-switch-container .toggle-switch input {
@@ -57,8 +68,8 @@
 .toggle-switch-container .slider {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 40px;
+    height: 25px;
     background-color: #ccc;
     border-radius: 34px;
     cursor: pointer;
@@ -67,8 +78,8 @@
 .toggle-switch-container .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 17px;
+    width: 17px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -81,5 +92,5 @@
 }
 
 .toggle-switch-container input:checked + .slider:before {
-    transform: translateX(26px);
+    transform: translateX(17px);
 }

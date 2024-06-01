@@ -1,45 +1,62 @@
-# AutoFill Extension
+# TextEnhancer Pro
 
-AutoFill Extension is a Chrome extension that automatically suggests improvements for text inputs on webpages using ChatGPT.
+TextEnhancer Pro is a Chrome extension designed to enhance your text inputs with AI-powered suggestions. Utilizing the power of OpenAI's GPT-4 model, this extension helps you write better and more concise text by providing three suggestions for improvement.
 
 ## Features
 
-- Automatically suggests improvements for text inputs and textareas on webpages.
-- Uses the ChatGPT API to generate improved suggestions.
-- Toggle switch to enable or disable the extension.
+- **AI-Powered Suggestions**: Get three AI-generated suggestions for improving your text inputs.
+- **User-Friendly Interface**: Simple and intuitive interface for enabling/disabling the extension and managing API keys.
+- **Dynamic Input Handling**: Automatically adds improvement icons to text inputs and textareas on web pages, even if they are dynamically added.
+- **Persistent Storage**: Saves your API key and extension state using Chrome's storage, ensuring your settings persist across sessions.
 
 ## Installation
 
-1. Clone or download the repository to your local machine.
-2. Open Google Chrome and navigate to `chrome://extensions/`.
-3. Enable Developer mode using the toggle switch at the top right.
-4. Click on "Load unpacked" and select the directory where you cloned or downloaded the extension.
+1. **Clone the Repository**:
+   ```
+   git clone https://github.com/kartik-syal/ai-text-enhancer-pro.git
+   ```
+
+2. **Load the Extension**:
+   - Open Chrome and navigate to `chrome://extensions/`.
+   - Enable "Developer mode" using the toggle switch in the top right corner.
+   - Click "Load unpacked" and select the directory where you cloned the repository.
+
+3. **Set Your OpenAI API Key**:
+   - Click on the TextEnhancer Pro extension icon in the Chrome toolbar.
+   - Enter your OpenAI API key and click "Save".
 
 ## Usage
 
-1. Once installed, the extension icon will appear in the Chrome toolbar.
-2. Click on the extension icon to open the popup.
-3. Toggle the switch to enable or disable the extension.
-4. When enabled, the extension will automatically suggest improvements for text inputs and textareas on webpages.
+1. **Enable/Disable Extension**:
+   - Use the toggle switch in the extension popup to enable or disable TextEnhancer Pro.
 
-## Environment Variables
+2. **Get Text Suggestions**:
+   - When enabled, an improvement icon will appear in text input fields and textareas on web pages.
+   - Click the improvement icon to receive three suggestions from the AI.
 
-- `OPENAI_API_KEY`: Set this environment variable to your ChatGPT API key. This key is used by the extension to access the ChatGPT API for generating suggestions.
+## Files and Directories
 
-## Troubleshooting
+- `manifest.json`: Defines the extension's metadata and permissions.
+- `background.js`: Manages the background script for handling extension state and messaging.
+- `content.js`: Handles the logic for interacting with web pages, fetching suggestions, and displaying dropdowns.
+- `popup.html`: The HTML for the extension's popup interface.
+- `popup.js`: JavaScript for handling the popup's functionality.
+- `popup.css`: Styling for the popup interface.
+- `styles.css`: Additional CSS for styling the improvement icons and suggestion dropdowns.
 
-- If the extension is not working as expected, try refreshing the webpage or reloading the extension in `chrome://extensions/`.
-- Ensure that the `OPENAI_API_KEY` environment variable is correctly set with your ChatGPT API key.
-- Check the console in the Chrome DevTools for any errors or warnings related to the extension.
+## Contributing
 
-## Contributions
+We welcome contributions to improve TextEnhancer Pro! To contribute:
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please create a GitHub issue or submit a pull request.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with descriptive messages.
+4. Push your changes to your fork and open a pull request.
 
-## License
+## Contact
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+For questions or feedback, please open an issue on GitHub or contact us at [kartik.syal40@gmail.com].
 
 ---
 
-Make sure to replace `YOUR_CHATGPT_API_KEY` with your actual ChatGPT API key in the environment variable section.
+Thank you for using TextEnhancer Pro! We hope it helps you write better and more concise text with ease.
